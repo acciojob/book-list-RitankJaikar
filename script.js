@@ -26,7 +26,7 @@ formGroup.addEventListener("submit", e => {
 	const td3 = document.createElement("td");
 	td3.innerText= isbn.value;
 	const td4 = document.createElement("td");
-	td4.innerHTML = "<button onclick='deleteRow(event)'>X</button>";
+	td4.innerHTML = "<button class='delete' onclick='deleteRow(event)'>X</button>";
 
 	tr.append(td1, td2, td3, td4);
 	const tbody = document.querySelector(".table tbody");
